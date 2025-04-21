@@ -1,13 +1,18 @@
-import './styles.css'
+import './global.css'
+import { Post } from './Post'
 
-function App() {
+export function App() {
 
   return (
-    <>
-        <p>
-          Aprendizado react
-        </p>
-    </>
+    <div>
+      <Post 
+      author="JK Rowling" 
+      content="Harry Potter"
+      />
+      <Post author="Rainn Wilson" content="Soul Boom"/>
+      <Post />
+    </div>
+    
   )
 }
 
